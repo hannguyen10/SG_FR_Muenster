@@ -1,0 +1,28 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class MouseMovement : MonoBehaviour
+{
+    public Camera cam;
+    private float xRotation = 0f;
+
+    public float xSensitivity = 25f;
+    public float ySensitivity = 25f;
+
+    public void ProcessLook(Vector2 input)
+    {
+        float mouseX = input.x;
+        float mouseY = input.y;
+
+        //camera rotation for moving up and down
+        xRotation -= (mouseY * Time.deltaTime) * ySensitivity;
+        // clamp xRotation between -80f & 80f
+        xRotation = Mathf.Clamp(xRotation, -80f, 80f);
+        // apply to camera transform
+        cam.transform.localRotation = Quaternion.Euler(xRotation, 0, 0);
+        // rotate player left and right
+        transform.Rotate(Vector3.up * (mouseX * Time.deltaTime) * xSensitivity);
+
+    }
+}
