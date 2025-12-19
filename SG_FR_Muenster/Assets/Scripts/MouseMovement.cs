@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class MouseMovement : MonoBehaviour
 {
+    void Start () {
+        Cursor.visible = true;
+    }
     public Camera cam;
     private float xRotation = 0f;
 
