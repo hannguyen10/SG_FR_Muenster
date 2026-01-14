@@ -4,7 +4,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class MC : MonoBehaviour, IInteractables
+public class MC : MonoBehaviour
 {
    public GargoyleDialogue dialogueData;
    public GameObject dialoguePanel;
