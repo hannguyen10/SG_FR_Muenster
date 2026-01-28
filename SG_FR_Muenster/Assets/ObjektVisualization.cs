@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class NumberGenerator : MonoBehaviour, IInteractable
+public class ObjektVisualization : MonoBehaviour, IInteractable
 {
     private Renderer rend;
     private Material mat;
