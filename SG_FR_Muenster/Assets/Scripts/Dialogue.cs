@@ -5,14 +5,16 @@ using TMPro;
 
 public class Dialogue : MonoBehaviour
 {
+    public MouseMovement mouseMovement;
     public TextMeshProUGUI textComponent;
     public string[] lines;
     public float textSpeed;
 
     private int index;
+    private bool dialogueActive = false;
 
     // Start is called before the first frame update
-    void Start()
+    void OnEnable()
     {
         textComponent.text = string.Empty;
         StartDialogue();
@@ -21,6 +23,8 @@ public class Dialogue : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (!dialogueActive) return;
+
         if (Input.GetMouseButtonDown(0))
         {
             if (textComponent.text == lines[index])
@@ -37,7 +41,24 @@ public class Dialogue : MonoBehaviour
 
     void StartDialogue()
     {
+        Debug.Log("Dialog startet");
+
         index = 0;
+        dialogueActive = true;
+
+        if (mouseMovement != null)
+        {
+            mouseMovement.lookEnabled = false;
+        }
+        else
+        {
+            Debug.LogError("MouseMovement ist NICHT zugewiesen!");
+        }
+
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+
+        textComponent.text = string.Empty;
         StartCoroutine(TypeLine());
     }
 
@@ -60,6 +81,12 @@ public class Dialogue : MonoBehaviour
         }
         else
         {
+            dialogueActive = false;
+
+            mouseMovement.lookEnabled = true;
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
+
             gameObject.SetActive(false);
         }
     }
