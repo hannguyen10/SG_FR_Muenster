@@ -3034,15 +3034,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2629d580c44c16540a4024303a9fcf52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mouseMovement: {fileID: 1758050976}
   textComponent: {fileID: 1422406237}
   lines:
-  - Ah! Endlich jemand, der die Augen offen hat.
-  - "Willkommen in der Portalhalle des Freiburger M\xFCnsters!"
-  - "Hier drin entscheidet sich vieles, fr\xFCher mehr als heute."
-  - Und ich?
-  - Ich bin Gargulus und werde dich begleiten.
-  - Also los, schau dich um und interagier mit den Objekten, wenn du mehr wissen
-    willst.
+  - "Ah\u2026 endlich jemand, der nicht einfach vorbeil\xE4uft."
+  - "Willkommen in der Portalhalle des Freiburger M\xFCnsters. "
+  - 'Hier wurde nicht nur gebetet. '
+  - Hier wurde entschieden.
+  - "Fr\xFCher jedenfalls mehr als heute"
+  - Und ich? Ich bin Gargulus.
+  - Seit Jahrhunderten aus Stein und heute dein Begleiter.
+  - "Damit du dich hier nicht verl\xE4ufst."
+  - 'Mit WASD bewegst du dich durch die Halle. '
+  - 'Mit E kannst du Objekte untersuchen. '
+  - Und mit der Maus schaust du dich um.
+  - Keine Sorge, Hinweise bekommst du unterwegs.
+  - 'Also los: Sieh dich um.'
+  - "Und wenn du mehr wissen willst\u2026 klick ruhig."
   textSpeed: 0.04
 --- !u!114 &1249303951
 MonoBehaviour:
@@ -4811,6 +4819,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c57f12b1b80f042498cfe2500c29709f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lookEnabled: 1
   cam: {fileID: 1119413017}
   xSensitivity: 15
   ySensitivity: 15
@@ -6296,6 +6305,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 1.21
       objectReference: {fileID: 0}
+    - target: {fileID: 3195222275705810203, guid: d86a5fc198f37a841ba9583fd4bef654, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.01
+      objectReference: {fileID: 0}
     - target: {fileID: 3475473795557896933, guid: d86a5fc198f37a841ba9583fd4bef654, type: 3}
       propertyPath: m_Layer
       value: 6
@@ -6351,6 +6364,18 @@ PrefabInstance:
     - target: {fileID: 8891690601448819694, guid: d86a5fc198f37a841ba9583fd4bef654, type: 3}
       propertyPath: field of view
       value: 48
+      objectReference: {fileID: 0}
+    - target: {fileID: 8891690601448819694, guid: d86a5fc198f37a841ba9583fd4bef654, type: 3}
+      propertyPath: m_BackGroundColor.b
+      value: 0.0060074725
+      objectReference: {fileID: 0}
+    - target: {fileID: 8891690601448819694, guid: d86a5fc198f37a841ba9583fd4bef654, type: 3}
+      propertyPath: m_BackGroundColor.g
+      value: 0.07541945
+      objectReference: {fileID: 0}
+    - target: {fileID: 8891690601448819694, guid: d86a5fc198f37a841ba9583fd4bef654, type: 3}
+      propertyPath: m_BackGroundColor.r
+      value: 0.14150941
       objectReference: {fileID: 0}
     - target: {fileID: 8891690601448819694, guid: d86a5fc198f37a841ba9583fd4bef654, type: 3}
       propertyPath: m_projectionMatrixMode
