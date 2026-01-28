@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class MouseMovement : MonoBehaviour
 {
+    public bool lookEnabled = true;
+
     void Start () {
         Cursor.visible = true;
     }
@@ -15,6 +17,7 @@ public class MouseMovement : MonoBehaviour
 
     public void ProcessLook(Vector2 input)
     {
+        if (!lookEnabled) return;
         float mouseX = input.x;
         float mouseY = input.y;
 
