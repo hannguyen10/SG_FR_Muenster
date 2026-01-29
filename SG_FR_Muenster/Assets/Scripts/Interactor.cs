@@ -30,6 +30,10 @@ public class Interactor : MonoBehaviour
                     currentInteractable = interactable;
                     currentInteractable.OnHoverEnter();
                 }
+                if (Input.GetKeyDown(KeyCode.E) || Input.GetMouseButtonDown(0))
+                {
+                    currentInteractable.Interact();
+                }
                 return;
             }
         }

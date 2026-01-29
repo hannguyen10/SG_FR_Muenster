@@ -8,26 +8,45 @@ public class ObjektVisualization : MonoBehaviour, IInteractable
     private Color baseEmission = Color.black;
     private Color glowEmission = Color.yellow * 2f; // Intensität!
 
+    [Header("Dialog")]
+    public Dialogue dialogueManager;
+    [TextArea(3, 5)]
+    public string[] dialogueLines;
+
+    [Header("Hint")]
+    public InteractionHintUI hintUI;
+    public string hintText = "Klicke, um mehr zu erfahren";
+
+    
     void Start()
     {
         rend = GetComponent<Renderer>();
-        mat = rend.material; // eigene Instanz!
+        mat = rend.material;
         mat.EnableKeyword("_EMISSION");
     }
 
     public void OnHoverEnter()
     {
         mat.SetColor("_EmissionColor", glowEmission);
+        hintUI?.Show(hintText);
     }
 
     public void OnHoverExit()
     {
         mat.SetColor("_EmissionColor", baseEmission);
+        hintUI?.Hide();
     }
 
     public void Interact()
     {
-        Debug.Log(Random.Range(0, 100));
+        
+        if (Dialogue.IsDialogueActive) return;
+        hintUI?.Hide();
+
+        dialogueManager.gameObject.SetActive(true);
+        dialogueManager.StartDialogue(dialogueLines);
+
+        
     }
 }
 

@@ -962,6 +962,99 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 123.439, z: 0}
+--- !u!1 &365554577
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 365554579}
+  - component: {fileID: 365554581}
+  - component: {fileID: 365554580}
+  - component: {fileID: 365554578}
+  m_Layer: 5
+  m_Name: CutSceneDialogue
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &365554578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 365554577}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2629d580c44c16540a4024303a9fcf52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mouseMovement: {fileID: 1758050976}
+  textComponent: {fileID: 1423471594}
+  lines: []
+  textSpeed: 0
+--- !u!224 &365554579
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 365554577}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1423471596}
+  m_Father: {fileID: 849554578}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 150, y: -315}
+  m_SizeDelta: {x: -700, y: -670}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &365554580
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 365554577}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &365554581
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 365554577}
+  m_CullTransparentMesh: 1
 --- !u!1 &401546737
 GameObject:
   m_ObjectHideFlags: 0
@@ -2224,6 +2317,108 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &849554577
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 849554578}
+  - component: {fileID: 849554581}
+  - component: {fileID: 849554580}
+  - component: {fileID: 849554579}
+  m_Layer: 5
+  m_Name: Canvas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &849554578
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 849554577}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 365554579}
+  m_Father: {fileID: 1758050977}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
+--- !u!114 &849554579
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 849554577}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &849554580
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 849554577}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 1
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 1920, y: 1080}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+  m_PresetInfoIsWorld: 0
+--- !u!223 &849554581
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 849554577}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 0
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_VertexColorAlwaysGammaSpace: 0
+  m_AdditionalShaderChannelsFlag: 25
+  m_UpdateRectTransformForStandalone: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
 --- !u!1 &867891378
 GameObject:
   m_ObjectHideFlags: 0
@@ -2994,6 +3189,7 @@ GameObject:
   - component: {fileID: 1249303949}
   - component: {fileID: 1249303952}
   - component: {fileID: 1249303951}
+  - component: {fileID: 1249303953}
   - component: {fileID: 1249303950}
   m_Layer: 5
   m_Name: DialogueBox
@@ -3036,21 +3232,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mouseMovement: {fileID: 1758050976}
   textComponent: {fileID: 1422406237}
-  lines:
-  - "Ah\u2026 endlich jemand, der nicht einfach vorbeil\xE4uft."
-  - "Willkommen in der Portalhalle des Freiburger M\xFCnsters. "
-  - 'Hier wurde nicht nur gebetet. '
-  - Hier wurde entschieden.
-  - "Fr\xFCher jedenfalls mehr als heute"
-  - Und ich? Ich bin Gargulus.
-  - Seit Jahrhunderten aus Stein und heute dein Begleiter.
-  - "Damit du dich hier nicht verl\xE4ufst."
-  - 'Mit WASD bewegst du dich durch die Halle. '
-  - 'Mit E kannst du Objekte untersuchen. '
-  - Und mit der Maus schaust du dich um.
-  - Keine Sorge, Hinweise bekommst du unterwegs.
-  - 'Also los: Sieh dich um.'
-  - "Und wenn du mehr wissen willst\u2026 klick ruhig."
+  lines: []
   textSpeed: 0.04
 --- !u!114 &1249303951
 MonoBehaviour:
@@ -3090,6 +3272,34 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1249303948}
   m_CullTransparentMesh: 1
+--- !u!114 &1249303953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1249303948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01e1102f812bb834ebdebe3d92a9ea39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueManager: {fileID: 1249303950}
+  introLines:
+  - "Ah\u2026 endlich jemand, der nicht einfach vorbeil\xE4uft."
+  - "Willkommen in der Portalhalle des Freiburger M\xFCnsters. "
+  - 'Hier wurde nicht nur gebetet. '
+  - Hier wurde entschieden.
+  - "Fr\xFCher jedenfalls mehr als heute"
+  - Und ich? Ich bin Gargulus.
+  - Seit Jahrhunderten aus Stein und heute dein Begleiter.
+  - "Damit du dich hier nicht verl\xE4ufst."
+  - 'Mit WASD bewegst du dich durch die Halle. '
+  - 'Mit E kannst du Objekte untersuchen. '
+  - Und mit der Maus schaust du dich um.
+  - Keine Sorge, Hinweise bekommst du unterwegs.
+  - 'Also los: Sieh dich um.'
+  - "Und wenn du mehr wissen willst\u2026 klick ruhig."
 --- !u!1 &1252308702
 GameObject:
   m_ObjectHideFlags: 0
@@ -3525,7 +3735,7 @@ GameObject:
   - component: {fileID: 1349831051}
   - component: {fileID: 1349831050}
   m_Layer: 0
-  m_Name: Cube (45)
+  m_Name: Jungfrauen Test
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3543,6 +3753,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94927593c3613e5499883db500a086e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dialogueManager: {fileID: 365554578}
+  dialogueLines:
+  - "Ah\u2026 meine Lieblingsgeschichte."
+  - Zehn Jungfrauen warten hier.
+  - "F\xFCnf klug.\r                 F\xFCnf t\xF6richt.\r\n"
+  - "Die Klugen halten ihre gef\xFCllten Lampen hoch.\r\n\r\n"
+  - "Sie l\xE4cheln."
+  - Sie sind vorbereitet.
+  - "Christus f\xFChrt sie in die Kirche.\r\n"
+  - "Ein Bild f\xFCr den Eintritt in den himmlischen Brautsaal."
+  - "Die T\xF6richten hingegen?"
+  - Ihre Lampen sind leer.
+  - 'Sie haben nicht aufgepasst.
+
+'
+  - Und nun bleibt ihnen das Tor verschlossen.
+  - Kleine Lampen.
+  - "Gro\xDFe Konsequenzen."
+  - 'Die Botschaft ist einfach:'
+  - Wer wachsam ist, darf eintreten.
+  - "Wer nicht\u2026 wartet drau\xDFen."
 --- !u!114 &1349831051
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3987,6 +4218,140 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1422406235}
   m_CullTransparentMesh: 1
+--- !u!1 &1423471593
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1423471596}
+  - component: {fileID: 1423471595}
+  - component: {fileID: 1423471594}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1423471594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1423471593}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Cutscene Dialogue
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 36
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1423471595
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1423471593}
+  m_CullTransparentMesh: 1
+--- !u!224 &1423471596
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1423471593}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 365554579}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 1000, y: 200}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1617925763
 GameObject:
   m_ObjectHideFlags: 0
@@ -5411,7 +5776,7 @@ GameObject:
   - component: {fileID: 1922403797}
   - component: {fileID: 1922403796}
   m_Layer: 0
-  m_Name: Cube (42)
+  m_Name: "F\xFCrst der Welt"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5429,6 +5794,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94927593c3613e5499883db500a086e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dialogueManager: {fileID: 365554578}
+  dialogueLines:
+  - "Kommen wir zu etwas\u2026 Verf\xFChrerischem."
+  - "Hier siehst du den \u201EF\xFCrsten der Welt\u201C, gemeinsam mit Voluptas."
+  - "Hier siehst du den \u201EF\xFCrsten der Welt\u201C, gemeinsam mit Voluptas."
+  - Von vorne?
+  - "Sch\xF6n."
+  - Charmant.
+  - "Fast \xFCberzeugend."
+  - "Doch wirf einen Blick auf die R\xFCckseite."
+  - "Kr\xF6ten."
+  - Schlangen.
+  - Molche.
+  - "\xDCberraschend?"
+  - Nicht wirklich.
+  - 'Die Botschaft ist klar:'
+  - "Nicht alles, was gl\xE4nzt, ist gut."
+  - Die Engel warnen schon davor.
+  - '"Fallt nicht in Versuchung."'
+  - '"Wachet und betet."'
+  - '"Geht nicht hinaus."'
+  - "Die Welt zeigt gern nur ihre sch\xF6ne Seite."
 --- !u!114 &1922403797
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6387,6 +6774,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5022114256942132371, guid: d86a5fc198f37a841ba9583fd4bef654, type: 3}
       insertIndex: 0
       addedObject: {fileID: 530933654}
+    - targetCorrespondingSourceObject: {fileID: 5022114256942132371, guid: d86a5fc198f37a841ba9583fd4bef654, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 849554578}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 6378129144429916965, guid: d86a5fc198f37a841ba9583fd4bef654, type: 3}
       insertIndex: -1

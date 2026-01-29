@@ -12,15 +12,9 @@ public class Dialogue : MonoBehaviour
 
     private int index;
     private bool dialogueActive = false;
+    public static bool IsDialogueActive = false;
 
-    // Start is called before the first frame update
-    void OnEnable()
-    {
-        textComponent.text = string.Empty;
-        StartDialogue();
-    }
 
-    // Update is called once per frame
     void Update()
     {
         if (!dialogueActive) return;
@@ -39,26 +33,23 @@ public class Dialogue : MonoBehaviour
         }
     }
 
-    void StartDialogue()
+    public void StartDialogue(string[] dialogueLines)
     {
-        Debug.Log("Dialog startet");
+        if (IsDialogueActive) return;
 
-        index = 0;
+        IsDialogueActive = true;
         dialogueActive = true;
 
-        if (mouseMovement != null)
-        {
-            mouseMovement.lookEnabled = false;
-        }
-        else
-        {
-            Debug.LogError("MouseMovement ist NICHT zugewiesen!");
-        }
+        lines = dialogueLines;
+        index = 0;
+
+        mouseMovement.lookEnabled = false;
 
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
 
         textComponent.text = string.Empty;
+        StopAllCoroutines();
         StartCoroutine(TypeLine());
     }
 
@@ -82,6 +73,7 @@ public class Dialogue : MonoBehaviour
         else
         {
             dialogueActive = false;
+            IsDialogueActive = false;
 
             mouseMovement.lookEnabled = true;
             Cursor.lockState = CursorLockMode.Locked;
@@ -89,5 +81,9 @@ public class Dialogue : MonoBehaviour
 
             gameObject.SetActive(false);
         }
+    }
+    void Awake()
+    {
+        Debug.Log("DialoguePanel Awake, active = " + gameObject.activeSelf);
     }
 }
