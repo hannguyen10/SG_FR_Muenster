@@ -1269,8 +1269,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 145, y: -275}
-  m_SizeDelta: {x: -710, y: -750}
+  m_AnchoredPosition: {x: 145, y: -270}
+  m_SizeDelta: {x: -710, y: -640}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &365554580
 MonoBehaviour:
@@ -1292,8 +1292,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: f1a367b7650191141a46fabc6d0b05c0, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -3722,8 +3722,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 145, y: -275}
-  m_SizeDelta: {x: -710, y: -750}
+  m_AnchoredPosition: {x: 145, y: -270}
+  m_SizeDelta: {x: -710, y: -640}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1249303950
 MonoBehaviour:
@@ -3754,15 +3754,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.14150941, g: 0.13149695, b: 0.13149695, a: 0.77254903}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.98039216}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: f1a367b7650191141a46fabc6d0b05c0, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -3802,7 +3802,6 @@ MonoBehaviour:
   - Seit Jahrhunderten aus Stein und heute dein Begleiter.
   - "Damit du dich hier nicht verl\xE4ufst."
   - 'Mit WASD bewegst du dich durch die Halle. '
-  - 'Mit E kannst du Objekte untersuchen. '
   - Und mit der Maus schaust du dich um.
   - Keine Sorge, Hinweise bekommst du unterwegs.
   - 'Also los: Sieh dich um.'
@@ -4627,7 +4626,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -10}
+  m_AnchoredPosition: {x: 10, y: -40}
   m_SizeDelta: {x: 1000, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1422406237
@@ -4659,8 +4658,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278197308
+  m_fontColor: {r: 0.23584908, g: 0.10940847, b: 0.0011124983, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -4677,8 +4676,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 40
-  m_fontSizeBase: 40
+  m_fontSize: 35
+  m_fontSizeBase: 35
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -4774,8 +4773,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278197308
+  m_fontColor: {r: 0.23529412, g: 0.10980392, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -4792,8 +4791,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 40
-  m_fontSizeBase: 40
+  m_fontSize: 35
+  m_fontSizeBase: 35
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -4858,7 +4857,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -10}
+  m_AnchoredPosition: {x: 10, y: -40}
   m_SizeDelta: {x: 1000, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1617925763
@@ -5733,14 +5732,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd97c8fbd77f25e4cb29764ddd1809f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueData: {fileID: 11400000, guid: 4b55a8fe33300ee49a6b2e4a595032aa, type: 2}
-  dialoguePanel: {fileID: 0}
-  dialogueText: {fileID: 0}
-  nameText: {fileID: 0}
-  portraitImage: {fileID: 0}
-  dialogueIndex: 0
-  isTyping: 0
-  isDialogueActive: 0
 --- !u!61 &1769408147
 BoxCollider2D:
   m_ObjectHideFlags: 0
