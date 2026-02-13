@@ -12,6 +12,9 @@ public class InteractionHintUI : MonoBehaviour
 
     public void Show(string text)
     {
+        if (Dialogue.IsDialogueActive || QuizManager.IsQuizActive)
+        return;
+        
         hintText.text = text;
         gameObject.SetActive(true);
     }
